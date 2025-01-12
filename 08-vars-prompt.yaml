@@ -3,9 +3,11 @@
   connection: local
   vars_prompt:
     - name: COURSE
-      prompt: please enter course name # this is the promot- means it read the data from user. it stores the data in the COURSE variable
+      prompt: please enter course name # this is the promot- means it read the data from user. it stores the data in the COURSE variable. data wont be displayed on the screen, it is private
+      private: false #it is not confidential information, value entered will be displayed on the screen
     - name: DURATION
-      prompt: please enter duration 
+      prompt: please enter duration
+      private: false 
     - name: TRAINER
       prompt: please enter trainer name
   tasks:
@@ -15,4 +17,4 @@
 
 
 # running the playbook
-# ansible-playbook -i inventory.ini 
+# ansible-playbook -i inventory.ini 08-vars-prompt.yaml
