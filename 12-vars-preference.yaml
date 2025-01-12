@@ -19,18 +19,21 @@
 
 
 # running the playbook
-#1. ansible-playbook -i inventory.ini 12-preference.yaml -e "GREET=ARGS"
+#1. ansible-playbook -i inventory.ini 12-vars-preference.yaml -e "GREET=ARGS"
 #1. first preference goes to command line variables(args)
 
-#2.ansible-playbook -i inventory.ini 12-preference.yaml 
+#2.ansible-playbook -i inventory.ini 12-vars-preference.yaml 
 #2. second preference goes to TASK level variables
 
-#3. ansible-playbook -i inventory.ini 12-preference.yaml
+#3. ansible-playbook -i inventory.ini 12-vars-preference.yaml
 #3. third preference goes to prompt
 
 
-#4. ansible-playbook -i inventory.ini 12-preference.yaml 
+#4. ansible-playbook -i inventory.ini 12-vars-preference.yaml 
 #4. fourth preference goes to Play variables
+
+#5. ansible-playbook -i inventory.ini 12-vars-preference.yaml
+#5. fifth preference goes to INVENTORY variables
 
 
 
