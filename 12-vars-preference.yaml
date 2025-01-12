@@ -1,8 +1,8 @@
 - name: variables
   hosts: local
   connection: local
-  vars: # PLAY level variables
-    GREET: "PLAY"
+  # vars: # PLAY level variables
+  #   GREET: "PLAY"
   # vars_files:
   #   - course.yaml
   # vars_prompt:
@@ -35,11 +35,8 @@
 #5. ansible-playbook -i inventory.ini 12-vars-preference.yaml 
 #5. fourth preference goes to Play variables
 
-#5. ansible-playbook -i inventory.ini 12-vars-preference.yaml
-#5. fifth preference goes to INVENTORY variables
-
 #6. ansible-playbook -i inventory.ini 12-vars-preference.yaml
-#6. sixth preference goes to variables from files
+#6. fifth preference goes to INVENTORY variables
 
 
 
