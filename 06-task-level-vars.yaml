@@ -1,0 +1,24 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:     # PLAY level variables (GLOBAL variables)
+    COURSE: "Devops with aws"
+    DURATION: 12hrs
+    TRAINER: sivakumar
+  tasks: 
+  - name: print the variables
+    vars:     # TASK level variables, (accessible only with in the task. Task variables can override play level variables) Local variables
+      COURSE: Ansible
+      DURATION: 50hrs
+      TRAINER: navya
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}" 
+  - name: print the variable
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+
+
+    
+# running the playbook
+# ansible-playbook -i inventory.ini 06-task-level-vars.yaml
