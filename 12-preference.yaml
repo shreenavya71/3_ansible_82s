@@ -6,8 +6,9 @@
   vars_files:
     - course.yaml
   vars_prompt:
-    prompt: Enter the values
-    private: false
+    - name: GREET
+      prompt: Enter the values
+      private: false
     
   tasks: 
   - name: print the variable
