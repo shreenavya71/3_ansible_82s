@@ -14,3 +14,10 @@
   - name: PLAY2 and TASK1
     ansible.builtin.debug:
       msg: "Hello from PLAY2 and TASK1"
+    
+
+# running the playbook
+# ansible-playbook -i inventory.ini 04-multi-play.yaml 
+
+
+
