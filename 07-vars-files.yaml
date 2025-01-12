@@ -12,4 +12,4 @@
 
 
 # running the playbook
-# ansible-playbook -i inventory.ini 
+# ansible-playbook -i inventory.ini 07-vars-files.yaml
