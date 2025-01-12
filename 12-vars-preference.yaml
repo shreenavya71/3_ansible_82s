@@ -26,7 +26,10 @@
 #2. second preference goes to TASK level variables
 
 #3. ansible-playbook -i inventory.ini 12-vars-preference.yaml
-#3. third preference goes to prompt
+#3. sixth preference goes to variables from files
+
+#4. ansible-playbook -i inventory.ini 12-vars-preference.yaml
+#4. third preference goes to prompt
 
 
 #4. ansible-playbook -i inventory.ini 12-vars-preference.yaml 
