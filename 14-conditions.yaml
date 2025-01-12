@@ -15,3 +15,7 @@
       when: my_number <= 10
 
     
+
+
+# running the playbook
+# ansible-playbook -i inventory.ini 14-conditions.yaml
