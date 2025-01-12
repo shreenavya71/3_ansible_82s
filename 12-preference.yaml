@@ -1,0 +1,21 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars: # PLAY level variables
+    GREET: "PLAY"
+  vars_files:
+    - course.yaml
+  vars_prompt:
+    prompt: Enter the values
+    private: false
+    
+  tasks: 
+  - name: print the variable
+    vars:
+      GREET: "TASK"
+    ansible.builtin.debug:
+      msg: "Hello from {{ GREET }}"
+
+
+# running the playbook
+#
