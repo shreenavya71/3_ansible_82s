@@ -4,3 +4,10 @@
     - name: printing hello world
       ansible.builtin.debug:
         msg: "Hello, World!"
+
+
+
+
+
+# running the playbook
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 02-hello-world.yaml 
