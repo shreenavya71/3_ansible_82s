@@ -12,11 +12,15 @@
     
   tasks: 
   - name: print the variable
-    vars:
-      GREET: "TASK"
+    # vars:
+    #   GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
 
 # running the playbook
-#
+#1. ansible-82s ]$ ansible-playbook -i inventory.ini 12-preference.yaml -e "GREET=ARGS"
+#1. first preference goes to command line variables(args)
+
+#2.ansible-playbook -i inventory.ini 12-preference.yaml 
+#2. second preference goes to TASK level variables
