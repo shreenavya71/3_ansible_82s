@@ -1,19 +1,19 @@
 - name: variables
   hosts: local
   connection: local
-  # vars: # PLAY level variables
-  #   GREET: "PLAY"
+    vars: # PLAY level variables
+      GREET: "PLAY"
   vars_files:
   - course.yaml
-  # vars_prompt:
-  #   - name: GREET
-  #     prompt: Enter the values
-  #     private: false
+    vars_prompt:
+      - name: GREET
+        prompt: Enter the values
+        private: false
     
   tasks: 
   - name: print the variable
-    # vars:
-    #   GREET: "TASK"
+    vars:
+      GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
 
@@ -34,6 +34,9 @@
 
 #5. ansible-playbook -i inventory.ini 12-vars-preference.yaml
 #5. fifth preference goes to INVENTORY variables
+
+#6. ansible-playbook -i inventory.ini 12-vars-preference.yaml
+#6. sixth preference goes to variables from files
 
 
 
