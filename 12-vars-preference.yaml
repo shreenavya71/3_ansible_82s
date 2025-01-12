@@ -5,10 +5,10 @@
     GREET: "PLAY"
   # vars_files:
   #   - course.yaml
-  vars_prompt:
-    - name: GREET
-      prompt: Enter the values
-      private: false
+  # vars_prompt:
+  #   - name: GREET
+  #     prompt: Enter the values
+  #     private: false
     
   tasks: 
   - name: print the variable
@@ -32,8 +32,8 @@
 #4. third preference goes to prompt
 
 
-#4. ansible-playbook -i inventory.ini 12-vars-preference.yaml 
-#4. fourth preference goes to Play variables
+#5. ansible-playbook -i inventory.ini 12-vars-preference.yaml 
+#5. fourth preference goes to Play variables
 
 #5. ansible-playbook -i inventory.ini 12-vars-preference.yaml
 #5. fifth preference goes to INVENTORY variables
