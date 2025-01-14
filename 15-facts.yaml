@@ -1,0 +1,10 @@
+- name: print the facts
+  hosts: wed
+  tasks:
+  - name: print the facts
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
+
+
+
+# run this script, you will get so much data of the ansible node. copy all the output and paste it in a file called facts.json
