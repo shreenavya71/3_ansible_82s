@@ -1,6 +1,6 @@
 - name: loops
   hosts: local
-  connection: Local
+  connection: local
   tasks:
     - name: print names
       ansible.builtin.debug:
