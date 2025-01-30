@@ -9,6 +9,8 @@
       state: present
 
   - name: start nginx
+    tags: 
+      - run
     ansible.builtin.service:
       name: nginx
       state: started
